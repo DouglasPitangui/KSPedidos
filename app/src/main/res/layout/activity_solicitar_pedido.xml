@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.dpitangui.myfirstapp.SolicitarPedido">
+
+    <TextView
+        android:text="Razão Social:"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingHorizontal="10dp"
+        />
+    <EditText
+        android:id="@+id/razaoSocial"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:hint="@string/razaoSocial"
+        android:singleLine="true"
+        android:textColor="@color/input_login"
+        android:textColorHint="@color/hint"
+        android:paddingVertical="10dp"
+        android:layout_marginHorizontal="10dp"/>
+
+    <TextView
+        android:text="Condição de Pagamento:"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingHorizontal="10dp"
+        />
+    <EditText
+        android:id="@string/condicaoPagamento"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:hint="@string/condicaoPagamento"
+        android:singleLine="true"
+        android:textColor="@color/input_login"
+        android:textColorHint="@color/hint"
+        android:paddingVertical="10dp"
+        android:layout_marginHorizontal="10dp"/>
+
+    <TextView
+        android:text="Observação:"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingHorizontal="10dp"
+        />
+    <EditText
+        android:id="@string/condicaoPagamento"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:hint="Observação"
+        android:singleLine="false"
+        android:textColor="@color/input_login"
+        android:textColorHint="@color/hint"
+        android:paddingVertical="10dp"
+        android:layout_marginHorizontal="10dp"/>
+
+
+    <TextView
+        android:text="Produtos:"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingHorizontal="10dp"
+        />
+    <AutoCompleteTextView
+        android:id="@+id/autocompleteProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:completionThreshold="2"
+        android:dropDownVerticalOffset="5dp"
+        android:completionHint="Selecione o produto."
+        android:popupBackground="@color/white"
+        android:background="@color/white"
+        android:paddingVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:text="Quantidade:"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="Desconto:"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="TESTE"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingHorizontal="10dp"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/quantidade"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:hint="Quantidade"
+            android:singleLine="true"
+            android:textColor="@color/input_login"
+            android:textColorHint="@color/hint"
+            android:paddingVertical="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight=".40"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/desconto"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:hint="Desconto"
+            android:singleLine="true"
+            android:textColor="@color/input_login"
+            android:textColorHint="@color/hint"
+            android:paddingVertical="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight=".40"
+            android:inputType="number"/>
+
+        <Button
+            android:text="ADD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="10dp"/>
+    </LinearLayout>
+
+   <ListView
+       android:id="@+id/listv"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       ></ListView>
+
+    </LinearLayout>
+</ScrollView>

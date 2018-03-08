@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="top|fill"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/ProdutoCodigo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Código"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/sepadaor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - "
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/ProdutoNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ProdutoCodigo"
+            android:layout_alignParentRight="true"
+            android:text="Produto"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="top|fill"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cifrao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R$ "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#D55243"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            />
+
+        <TextView
+            android:id="@+id/ProdutoValor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/ProdutoNome"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#D55243"
+            />
+    </LinearLayout>
+
+</LinearLayout>
